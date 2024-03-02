@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.nsu.burym.snakegame.controller.NewGameController"
+            style="-fx-background-image: url(com.nsu.burym.snakegame/background.jpg);"
+            prefHeight="600.0" prefWidth="960.0">
+
+    <ImageView pickOnBounds="true" preserveRatio="true" x="120.0" y="60.0" fitWidth="600" fitHeight="180">
+        <Image url="@/com.nsu.burym.snakegame/new_game/fieldSize.png"/>
+    </ImageView>
+
+    <ImageView pickOnBounds="true" preserveRatio="true" x="120.0" y="135.0" fitWidth="600" fitHeight="180">
+        <Image url="@/com.nsu.burym.snakegame/new_game/delay.png"/>
+    </ImageView>
+
+
+    <TextField fx:id="sizeField1" layoutX="600.0" layoutY="68.0" prefWidth="58.0" prefHeight="40.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </TextField>
+
+
+
+    <TextField fx:id="stateDelayMs" layoutX="600.0" layoutY="147.0" prefWidth="58.0" prefHeight="40.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </TextField>
+
+
+    <ImageView fx:id="startButton" onMouseClicked="#startButtonPressed" pickOnBounds="true" preserveRatio="true" x="555.0" y="530.0" fitWidth="280" fitHeight="60">
+        <image>
+            <Image url="@/com.nsu.burym.snakegame/buttons/start_button/startBut.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="backButton" onMouseClicked="#backButtonPressed" pickOnBounds="true" preserveRatio="true" x="110.0" y="527.0" fitWidth="280" fitHeight="60">
+        <image>
+            <Image url="@/com.nsu.burym.snakegame/buttons/back_button/backBut.png" />
+        </image>
+    </ImageView>
+</AnchorPane>

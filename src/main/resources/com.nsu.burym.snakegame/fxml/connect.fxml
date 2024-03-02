@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx/"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.nsu.burym.snakegame.controller.ConnectController"
+            style="-fx-background-image: url(com.nsu.burym.snakegame/background.jpg);"
+            prefHeight="600.0" prefWidth="960.0">
+
+    <ImageView pickOnBounds="true" preserveRatio="true" x="50.0" y="40.0" fitWidth="900" fitHeight="250">
+        <image>
+            <Image url="@/com.nsu.burym.snakegame/connect/connectingGames.png" />
+        </image>
+    </ImageView>
+
+    <ListView fx:id="availableGamesListView" layoutX="188" layoutY="145" prefHeight="340.0" prefWidth="585.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-background-color: gold; -fx-control-inner-background: gold" onMouseClicked="#listElementClicked"/>
+
+    <ImageView fx:id="backButton" onMouseClicked="#backButtonPressed" pickOnBounds="true" preserveRatio="true" x="11.0" y="527.0" fitWidth="170" fitHeight="45">
+        <image>
+            <Image url="@/com.nsu.burym.snakegame/buttons/back_button/backBut.png" />
+        </image>
+    </ImageView>
+</AnchorPane>

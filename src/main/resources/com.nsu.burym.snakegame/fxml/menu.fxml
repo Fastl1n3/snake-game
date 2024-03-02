@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.nsu.burym.snakegame.controller.MenuController"
+            style="-fx-background-image: url(com.nsu.burym.snakegame/background.jpg);"
+            prefHeight="600.0" prefWidth="960.0">
+
+    <ImageView pickOnBounds="true" preserveRatio="true" x="50.0" y="40.0" fitWidth="900" fitHeight="250">
+        <image>
+            <Image url="@/com.nsu.burym.snakegame/snake.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="newGameButton" onMouseClicked="#newGameButtonPressed" pickOnBounds="true" preserveRatio="true" x="20.0" y="200.0">
+        <image>
+            <Image url="@/com.nsu.burym.snakegame/buttons/new_game_button/newGameBut.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="connectButton" onMouseClicked="#connectButtonPressed" pickOnBounds="true" preserveRatio="true" x="20.0" y="300.0">
+        <image>
+            <Image url="@/com.nsu.burym.snakegame/buttons/connect_button/connectBut.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="exitButton" onMouseClicked="#exitButtonPressed" pickOnBounds="true" preserveRatio="true" x="20.0" y="400.0">
+    <image>
+        <Image url="@/com.nsu.burym.snakegame/buttons/exit_button/exitBut.png" />
+    </image>
+    </ImageView>
+
+
+
+    <TextField fx:id="playerNameField" layoutX="740.0" layoutY="150.0" text="Player">
+        <font>
+            <Font size="17.0" />
+        </font>
+    </TextField>
+
+    <ImageView pickOnBounds="true" preserveRatio="true" x="800.0" y="40.0"  fitWidth="100" fitHeight="100">
+        <image>
+            <Image url="@/com.nsu.burym.snakegame/options/user.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="applyButton" onMouseClicked="#applyButtonPressed" pickOnBounds="true" preserveRatio="true" x="780.0" y="200.0" fitWidth="170" fitHeight="45">
+        <image>
+            <Image url="@/com.nsu.burym.snakegame/buttons/apply_button/changeNickBut.png" />
+        </image>
+    </ImageView>
+
+</AnchorPane>

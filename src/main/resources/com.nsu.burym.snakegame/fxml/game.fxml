@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.nsu.burym.snakegame.controller.GameController"
+            style="-fx-background-image: url(com.nsu.burym.snakegame/background.jpg);"
+            prefHeight="600.0" prefWidth="960.0"
+            fx:id="root"
+            onKeyPressed="#handleOnKeyPressed">
+
+    <AnchorPane fx:id="rightAnchorPane" prefWidth="200.0" style="-fx-border-width: 10px">
+        <children>
+            <ListView fx:id="playersListView" layoutY="89" prefHeight="500.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width:4px; -fx-background-color: gold; -fx-control-inner-background: gold" />
+            <ImageView preserveRatio="true" layoutX="-30.0" y="40.0" fitWidth="300" fitHeight="150">
+                <image>
+                    <Image url="@/com.nsu.burym.snakegame/game/players.png" />
+                </image>
+            </ImageView>
+        </children>
+    </AnchorPane>
+
+    <GridPane fx:id="cellsPanel" layoutX="11.0" layoutY="89.0"/>
+
+    <ImageView fx:id="backButton" onMouseClicked="#backButtonPressed" pickOnBounds="true" preserveRatio="true" x="11.0" y="16.0" fitWidth="170" fitHeight="45">
+        <image>
+            <Image url="@/com.nsu.burym.snakegame/buttons/back_button/backBut.png" />
+        </image>
+    </ImageView>
+</AnchorPane>
